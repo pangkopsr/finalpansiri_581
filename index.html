@@ -140,6 +140,15 @@ var point = L.marker([13.752790977190362, 100.50480216985952],
  ).addTo(map);
  point.bindPopup("<b>ครัวพรละมัย</b><br>8คะแนน")
  .openPopup();
+	 
+var legend = L.control({position: "bottomleft"});
+legend.onAdd = function(map) {
+ var div = L.DomUtil.create("div", "legend");
+ div.innerHTML = 
+ '<p><b>ร้านอาหารชื่อดังในประเทศไทย</b></p><hr>' +
+ 'Created by Pansiri Wankaew<br>' 
+ return div;
+};
 </script>
 </body>
 </html>
