@@ -9,7 +9,6 @@
  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
  <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
  
- <!-- กำหนดขนาด -->
  <style>
  body {
  
@@ -76,7 +75,6 @@ var map = L.map("map", {center: [13.74803442863232, 100.51243361412507], zoom: 1
  
 L.control.layers(baseLayers).addTo(map);
  
-// 8. Adding markers จุดตำแหน่งที่ต้องการ
 //1
 var point = L.marker([13.752790977190362, 100.50480216985952],
  ).addTo(map);
@@ -142,7 +140,6 @@ var point = L.marker([13.752790977190362, 100.50480216985952],
  ).addTo(map);
  point.bindPopup("<b>ครัวพรละมัย</b><br>8คะแนน")
  .openPopup();
-
 </script>
 </body>
 </html>
